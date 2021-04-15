@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     development: {
       host: '127.0.0.1',
-      port: 8545,
+      port: 7545,
       network_id: '*',
     },
     ropsten: {
@@ -21,7 +21,7 @@ module.exports = {
   },
   compilers: {
     solc: {
-      version: '0.4.25'    // Fetch exact version from solc-bin (default: truffle's version)
+      version: '0.8.3'    // Fetch exact version from solc-bin (default: truffle's version)
     }
   }
 }

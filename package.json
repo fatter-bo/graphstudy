@@ -8,7 +8,8 @@
     "codegen": "graph codegen",
     "build": "graph build",
     "deploy": "graph deploy fatter-bo/graphstudy --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy-local": "graph deploy fatter-bo/graphstudy --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "deploy-local": "graph deploy fatter-bo/graphstudy --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
+    "watch-local": "graph deploy fatter-bo/graphstudy --watch --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.20.0",

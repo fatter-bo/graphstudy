@@ -13,6 +13,7 @@ contract GravatarRegistry {
   Gravatar[] public gravatars;
 
   mapping (uint => address) public gravatarToOwner;
+  mapping (uint => address) public gravatarToOwner1;
   mapping (address => uint) public ownerToGravatar;
 
   function createGravatar(string _displayName, string _imageUrl) public {
@@ -20,6 +21,7 @@ contract GravatarRegistry {
     uint id = gravatars.push(Gravatar(msg.sender, _displayName, _imageUrl)) - 1;
 
     gravatarToOwner[id] = msg.sender;
+    gravatarToOwner1[id] = msg.sender;
     ownerToGravatar[msg.sender] = id;
 
     emit NewGravatar(id, msg.sender, _displayName, _imageUrl);

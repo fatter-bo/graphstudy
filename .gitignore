@@ -1,6 +1,12 @@
 # Logs
 logs
+bin
+build
+generated
+src/types
 *.log
+*~
+*.swp
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
